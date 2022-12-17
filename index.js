@@ -1,7 +1,7 @@
 const cron = require("node-cron");
 const { exec } = require("child_process");
 
-const backupJob = new cron.schedule("10 * * * * *", function () {
+const backupJob = new cron.schedule("* * 6 * * *", function () {
   console.log("executing cron");
   exec(
     `mongodump --uri="mongodb://mongo:UJJWxg8mWr9quUa6hceu@containers-us-west-156.railway.app:6341/" -d=test --out=./fileStorage/backup`,
