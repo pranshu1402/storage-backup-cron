@@ -1,0 +1,30 @@
+{
+  "name": "storage-service-backup",
+  "version": "1.0.0",
+  "description": "Cron job to schedule backup of remote mongo database",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranshu1402/storage-backup-cron.git"
+  },
+  "keywords": [
+    "cron",
+    "mongodb",
+    "backup"
+  ],
+  "author": "Pranshu Goyal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranshu1402/storage-backup-cron/issues"
+  },
+  "homepage": "https://github.com/pranshu1402/storage-backup-cron#readme",
+  "dependencies": {
+    "cron": "^2.1.0",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.20"
+  }
+}
